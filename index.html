@@ -6,7 +6,56 @@
     <link rel="stylesheet" href="style.css">
     <title>Matecnic</title>
 </head>
-<body>
-    
+<body class="body">
+
+    <header>
+
+        <div class="botoes">
+        <button class="botao0">ABOUT ME</button>
+        <BUtton class="botao1">CONTACT</BUtton>
+        <BUtton class="botao2">KNOWLEDGE</BUtton>
+        <BUtton class="botao3">PROJECTS</BUtton>
+        <BUtton class="botao4">EXPERIENCE</BUtton>
+        </div>
+
+
+    <h1 class="titulo">Tomás Ramos</h1>
+
+    <div class="minhaimagem">
+    <img src="imagemsiteportfolio.png" alt="Me">
+    </div>
+
+    <p class="subtitulo">SOFTWARE ENGINEER, FRONT END & ANDROID APP DEVELOPER.</p>
+
+    </header>
+
+    <p class="HELLO">THIS IS MY PORTFOLIO</p>
+
+
 </body>
+<script>
+    const button = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Verifica se o usuário já tem um tema salvo no navegador
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    button.textContent = "☀️ Modo Claro";
+}
+
+// Função para alternar o tema
+button.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+
+    // Salva a preferência no navegador
+    if (body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+        button.textContent = "☀️ Modo Claro";
+    } else {
+        localStorage.setItem("theme", "light");
+        button.textContent = "🌙 Modo Escuro";
+    }
+});
+
+</script>
 </html>
