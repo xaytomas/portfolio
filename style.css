@@ -83,8 +83,8 @@ body {
 }
 
 .botao0{
-    background-color: rgb(0, 0, 0); /* Cor de fundo azul */
-    color: white; /* Cor do texto */
+    background-color: rgb(0, 0, 0); 
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 13px;
@@ -93,12 +93,12 @@ body {
 }
 
 .botao0:hover {
-    background-color: rgb(139, 118, 0); /* Muda a cor quando o mouse passa por cima */
+    background-color: rgb(139, 118, 0); 
 }
 
 .botao1{
-    background-color: rgb(0, 0, 0); /* Cor de fundo azul */
-    color: white; /* Cor do texto */
+    background-color: rgb(0, 0, 0);
+    color: white; 
     border: none;
     padding: 10px 20px;
     font-size: 13px;
@@ -107,12 +107,12 @@ body {
 }
 
 .botao1:hover {
-    background-color: rgb(139, 118, 0); /* Muda a cor quando o mouse passa por cima */
+    background-color: rgb(139, 118, 0); 
 }
 
 .botao2{
-    background-color: rgb(0, 0, 0); /* Cor de fundo azul */
-    color: white; /* Cor do texto */
+    background-color: rgb(0, 0, 0); 
+    color: white; 
     border: none;
     padding: 10px 20px;
     font-size: 13px;
@@ -121,12 +121,12 @@ body {
 }
 
 .botao2:hover {
-    background-color: rgb(139, 118, 0); /* Muda a cor quando o mouse passa por cima */
+    background-color: rgb(139, 118, 0); 
 }
 
 .botao3{
-    background-color: rgb(0, 0, 0); /* Cor de fundo azul */
-    color: white; /* Cor do texto */
+    background-color: rgb(0, 0, 0);
+    color: white; 
     border: none;
     padding: 10px 20px;
     font-size: 13px;
@@ -135,12 +135,11 @@ body {
 }
 
 .botao3:hover {
-    background-color: rgb(139, 118, 0); /* Muda a cor quando o mouse passa por cima */
+    background-color: rgb(139, 118, 0); 
 }
 
 .botao4{
-    background-color: rgb(0, 0, 0); /* Cor de fundo azul */
-    color: white; /* Cor do texto */
+    background-color: rgb(0, 0, 0); 
     border: none;
     padding: 10px 20px;
     font-size: 13px;
@@ -149,7 +148,7 @@ body {
 }
 
 .botao4:hover {
-    background-color: rgb(139, 118, 0); /* Muda a cor quando o mouse passa por cima */
+    background-color: rgb(139, 118, 0); 
 }
 
 .divisoria {
@@ -231,7 +230,7 @@ body {
 
 .stack-item i {
     font-size: 1.7vw;
-    color: #f0db4f; /* Cor base (pode ser alterada para cada ícone) */
+    color: #f0db4f; 
 }
 
 .projects {
@@ -381,19 +380,17 @@ html {
 
 
 
-/* Cores personalizadas para cada ícone */
-.contact-btn:nth-child(1) { background: #E1306C; } /* Instagram */
-.contact-btn:nth-child(2) { background: #000000; } /* GitHub */
+.contact-btn:nth-child(1) { background: #E1306C; }
+.contact-btn:nth-child(2) { background: #000000; }
 .contact-btn:nth-c
 
 
 
 
-/* Personalizando cores dos ícones */
-.stack-item .fa-html5 { color: #E34F26; } /* HTML */
-.stack-item .fa-css3-alt { color: #1572B6; } /* CSS */
-.stack-item .fa-code { color: #f06529; } /* XML */
-.stack-item .fa-js { color: #F7DF1E; } /* JavaScript */
-.stack-item .fa-java { color: #007396; } /* Java */
-.stack-item .fa-database { color: #2b7b9b; } /* SQL */
+.stack-item .fa-html5 { color: #E34F26; }
+.stack-item .fa-css3-alt { color: #1572B6; }
+.stack-item .fa-code { color: #f06529; }
+.stack-item .fa-js { color: #F7DF1E; }
+.stack-item .fa-java { color: #007396; }
+.stack-item .fa-database { color: #2b7b9b; }
 
