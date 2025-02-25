@@ -5,57 +5,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Matecnic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="body">
 
     <header>
 
         <div class="botoes">
-        <button class="botao0">ABOUT ME</button>
-        <BUtton class="botao1">CONTACT</BUtton>
-        <BUtton class="botao2">KNOWLEDGE</BUtton>
-        <BUtton class="botao3">PROJECTS</BUtton>
-        <BUtton class="botao4">EXPERIENCE</BUtton>
+            <a href="#about" class="botao0">ABOUT ME</a>
+            <a href="#knowledge" class="botao2">KNOWLEDGE</a>
+            <a href="#projects" class="botao3">PROJECTS</a>
+            <a href="#experience" class="botao4">EXPERIENCE</a>
+            <a href="#contact" class="botao1">CONTACT</a>
+        </div>
+
+        <h1 class="titulo">Tomas Ramos</h1>
+        <p class="subtitulo">SOFTWARE ENGINEER, FRONT END & ANDROID APP DEVELOPER.</p>
+
+        <div class="container-imagem">
+            <div class="minhaimagem">
+                <img src="imagemsiteportfolio.png" alt="Me">
+            </div>
+        </div>
+
+        
+    </header>
+
+    <hr id="about" class="divisoria">
+
+    <h1 class="abas">About Me</h1>
+    <div class="stack-column1">
+        <p class="textosobremim">I'm currently 17 years old and I am a computer systems management and programming student, I like web development.</p>
+    </div>
+
+    <hr id="knowledge" class="divisoria">
+
+    <section class="tech-stack">
+        <h1 class="abas">Tech Stack</h1>
+        
+        <div class="stack-container">
+            <!-- Frontend -->
+            <div class="stack-column">
+                <h3>Frontend</h3>
+                <div class="stack-items">
+                    <div class="stack-item">
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div class="stack-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div class="stack-item">
+                        <i class="fas fa-code"></i>
+                        <p>XML</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Backend -->
+            <div class="stack-column">
+                <h3>Backend</h3>
+                <div class="stack-items">
+                    <div class="stack-item">
+                        <i class="fab fa-js"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="stack-item">
+                        <i class="fab fa-java"></i>
+                        <p>Java</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Database -->
+            <div class="stack-column">
+                <h3>Database</h3>
+                <div class="stack-items">
+                    <div class="stack-item">
+                        <i class="fas fa-database"></i>
+                        <p>SQL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr id="projects" class="divisoria">
+
+    <h1 class="abas">Projects</h1>
+    <section class="projects">
+        <!-- Portfolio Project -->
+
+
+
+
+
+
+
+        <div class="project-card">
+            <video class="project-video" controls>
+                <source src="videos/projeto1.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+        
+            <h3 class="project-title">Portfolio</h3>
+            <p class="project-description">This project is my portfolio, it was made with HTML, CSS and JavaScript using the vscode.</p>
+    
+            <div class="stack-items">
+                <div class="stack-item">
+                    <i class="fab fa-html5"></i>
+                    <p class="textoDosIcons">HTML</p>
+                </div>
+                <div class="stack-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <p class="textoDosIcons">CSS</p>
+                </div>
+                <div class="stack-item">
+                    <i class="fab fa-js"></i>
+                    <p class="textoDosIcons">JavaScript</p>
+                </div>
+            </div>
+        
+            <a href="https://github.com/xaytomas/portfolio" class="github-link" target="_blank">GitHub repository</a>
         </div>
 
 
-    <h1 class="titulo">Tomás Ramos</h1>
 
-    <div class="minhaimagem">
-    <img src="imagemsiteportfolio.png" alt="Me">
+
+
+        
+
+        <!-- Android App Project -->
+        <div class="project-card">
+            <video class="project-video" controls>
+                <source src="videos/projeto2.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+
+            <h3 class="project-title">APP Android studio</h3>
+            <p class="project-description">This project is an APP for Android, it was made with XML, Java, SqlServer and I created an API in Java, this project was made in Android Studio.</p>
+
+            <div class="stack-items">
+                <div class="stack-item">
+                    <i class="fas fa-code"></i>
+                    <p class="textoDosIcons">XML</p>
+                </div>
+                <div class="stack-item">
+                    <i class="fab fa-java"></i>
+                    <p class="textoDosIcons">Java</p>
+                </div>
+                <div class="stack-item">
+                    <i class="fas fa-database"></i>
+                    <p class="textoDosIcons">SQL</p>
+                </div>
+            </div>
+        
+            <a href="https://github.com/xaytomas/APP-AndroidStudio" class="github-link" target="_blank">GitHub repository</a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- WebApp Project -->
+
+        <div class="project-card">
+
+            <video class="project-video" controls>
+
+                <source src="videos/projeto3.mp4" type="video/mp4">
+                Seu navegador não suporta a tag de vídeo.
+            </video>
+
+            <h3 class="project-title">WebApp</h3>
+            <p class="project-description">Descrição breve sobre o projeto, explicando o que foi feito e as tecnologias utilizadas.</p>
+
+
+        <div class="stack-items">
+                <div class="stack-item">
+                    <i class="fab fa-html5"></i>
+                    <p class="textoDosIcons">HTML</p>
+                </div>
+                <div class="stack-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <p class="textoDosIcons">CSS</p>
+                </div>
+                <div class="stack-item">
+                    <i class="fab fa-js"></i>
+                    <p class="textoDosIcons">JavaScript</p>
+                </div>
+            </div>
+        
+            <a href="https://github.com/seuusuario/projeto1" class="github-link" target="_blank">GitHub repository</a>
+        </div>
+    </section>
+
+    <hr id="experience" class="divisoria">
+
+    <h1 class="abas">Experience</h1>
+
+    <hr id="contact" class="divisoria">
+    <h1 id="contact" class="abas">Contact</h1>
+
+    <div class="contact-buttons">
+        <a href="https://github.com/xaytomas" target="_blank" class="contact-btn1">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tom%C3%A1s-ramos-294613341/" target="_blank" class="contact-btn2">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://wa.me/+351926469804" target="_blank" class="contact-btn3">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.instagram.com/xay_tomas/" target="_blank" class="contact-btn4">
+            <i class="fab fa-instagram"></i>
+        </a>
     </div>
-
-    <p class="subtitulo">SOFTWARE ENGINEER, FRONT END & ANDROID APP DEVELOPER.</p>
-
-    </header>
-
-    <p class="HELLO">THIS IS MY PORTFOLIO</p>
-
+    
+    
 
 </body>
 <script>
-    const button = document.getElementById("theme-toggle");
-const body = document.body;
-
-// Verifica se o usuário já tem um tema salvo no navegador
-if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("dark-mode");
-    button.textContent = "☀️ Modo Claro";
-}
-
-// Função para alternar o tema
-button.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-
-    // Salva a preferência no navegador
-    if (body.classList.contains("dark-mode")) {
-        localStorage.setItem("theme", "dark");
-        button.textContent = "☀️ Modo Claro";
-    } else {
-        localStorage.setItem("theme", "light");
-        button.textContent = "🌙 Modo Escuro";
-    }
-});
-
 </script>
 </html>

@@ -1,53 +1,85 @@
-.body{
-    background: linear-gradient(to right, #000000, #62621f);
+body {
+    background: linear-gradient(to right, #000000, rgb(98, 98, 31));
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #000;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .titulo {
     color: rgb(255, 255, 255);
     text-align: center;
-    margin-top: 155px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 90px;
+    margin-top: 16.5vh;
+    font-size: 4vw;
 }
 
+.container-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 5vh;
+    margin-bottom: 4.5vh;
+}
 
 .minhaimagem {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 67%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 20vw;
+    height: 20vw;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 .minhaimagem img {
     width: 100%;
-    height: 100%;/* Corta e ajusta */
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid rgb(98, 98, 31);
+    border-radius: 1000px;
 }
 
-
-.subtitulo{
+.subtitulo {
     color: rgb(255, 255, 255);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
-    font-size: 16px;
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-.HELLO{
-    color: rgb(0, 0, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 16px;
+    font-size: 1.2vw;
+    margin-bottom: 3vh;
 }
 
 .botoes {
-    text-align: center;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.botoes a {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.botoes a:hover {
+    background: linear-gradient(135deg, #000000 0%, #000000 100%);
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.botoes a:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .botao0{
@@ -119,3 +151,249 @@
 .botao4:hover {
     background-color: rgb(139, 118, 0); /* Muda a cor quando o mouse passa por cima */
 }
+
+.divisoria {
+    width: 80%;
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 40px auto;
+    opacity: 0.6;
+    margin-top: 85px;
+}
+
+.abas {
+    margin-top: 50px;
+    color: white;
+    font-size: 3vw;
+}
+
+.textosobremim{
+    color: white;
+    font-size: 1.15vw;
+}
+
+.tech-stack {
+    text-align: center;
+    color: white;
+}
+
+.tech-title {
+    font-size: 2.5vw;
+    margin-bottom: 20px;
+}
+
+.stack-container {
+    display: flex;
+    justify-content: center;
+    
+    gap: 50px;
+}
+
+.stack-column {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stack-column1 {
+    width: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stack-column h3 {
+    font-size: 1.8vw;
+    margin-bottom: 10px;
+}
+
+.stack-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.stack-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2vw;
+    color: white;
+}
+
+.stack-item i {
+    font-size: 1.7vw;
+    color: #f0db4f; /* Cor base (pode ser alterada para cada ícone) */
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-video {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    color: white;
+    font-size: 1.8vw;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    color: white;
+    font-size: 1vw;
+    margin-bottom: 15px;
+}
+
+.project-link,
+.github-link {
+    color: #000000;
+    font-size: 1.2vw;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(139, 118, 0);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.project-link:hover,
+.github-link:hover {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+
+.textoDosIcons{
+    font-size: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.contact-btn1 {
+    background: rgba(255, 254, 254, 0.1);
+    color: rgb(122, 39, 201);
+    font-size: 2vw;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-btn2 {
+    background: rgba(255, 254, 254, 0.1);
+    color: rgb(35, 72, 172);
+    font-size: 2vw;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-btn3 {
+    background: rgba(255, 254, 254, 0.1);
+    color: rgb(50, 165, 34);
+    font-size: 2vw;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-btn4 {
+    background: rgba(255, 254, 254, 0.1);
+    color: rgb(175, 39, 187);
+    font-size: 2vw;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    transform: scale(1.2);
+}
+
+.contact-btn i {
+    font-size: 1.5em;
+}
+
+
+.botoes a {
+    text-decoration: none;
+}
+
+
+
+/* Cores personalizadas para cada ícone */
+.contact-btn:nth-child(1) { background: #E1306C; } /* Instagram */
+.contact-btn:nth-child(2) { background: #000000; } /* GitHub */
+.contact-btn:nth-c
+
+
+
+
+/* Personalizando cores dos ícones */
+.stack-item .fa-html5 { color: #E34F26; } /* HTML */
+.stack-item .fa-css3-alt { color: #1572B6; } /* CSS */
+.stack-item .fa-code { color: #f06529; } /* XML */
+.stack-item .fa-js { color: #F7DF1E; } /* JavaScript */
+.stack-item .fa-java { color: #007396; } /* Java */
+.stack-item .fa-database { color: #2b7b9b; } /* SQL */
+
