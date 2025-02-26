@@ -7,6 +7,7 @@ body {
     min-height: 100vh;
     color: #000;
     transition: background-color 0.5s ease, color 0.5s ease;
+    font-family: 'Inconsolata', sans-serif;
 }
 
 .titulo {
@@ -394,4 +395,3 @@ html {
 .stack-item .fa-js { color: #F7DF1E; }
 .stack-item .fa-java { color: #007396; }
 .stack-item .fa-database { color: #2b7b9b; }
-
